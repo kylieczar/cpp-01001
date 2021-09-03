@@ -1,0 +1,5 @@
+#+TITLE: C++ 01001
+#+AUTHOR: [k-] czar
+
+1001 programs with c++
+
