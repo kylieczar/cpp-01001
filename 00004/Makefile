@@ -1,6 +1,6 @@
 build:
-	g++ power.cpp -o power.o -fmodules-ts -std=c++20
+	g++ power.cpp -o power.o -fmodules-ts -std=c++20 -Wall
 headers:
-	g++ -fmodules-ts -std=c++20 -c -x c++-system-header iostream -x c++-system-header cmath
+	g++ -fmodules-ts -std=c++20 -c -x c++-system-header iostream
 run:
 	./power.o

@@ -1,7 +1,6 @@
 import <iostream>;
 
 void read(int *b ,int *p) {
-  int x,y;
   std::cout << "Write the base number: ";
   std::cin >> *b;
   std::cout << "Write the power number: ";
@@ -9,7 +8,8 @@ void read(int *b ,int *p) {
 }
 
 int main() {
-  int b, p, power;
+  int b, p;
+  unsigned int power;
   
   read(&b, &p);
   while (p < 0 || b <= 1) {
@@ -24,6 +24,7 @@ int main() {
       power = power * b;
     }
   }
+  
   std::cout << std::endl;
   std::cout << b << " to the power of " << p << " is " << power << std::endl;
   return 0;
